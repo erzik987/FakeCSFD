@@ -6,7 +6,7 @@ using System.Text;
 
 namespace FakeCSFD.DAL.Model.Base
 {
-    public class Person
+    public class Person : EntityBase
     {
         public PersonType Type { get; set; }
 
