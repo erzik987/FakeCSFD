@@ -1,8 +1,8 @@
 ﻿using FakeCSFD.DAL.Enums;
 using FakeCSFD.DAL.Model.Base;
+using ImageMagick;
 using System;
 using System.Collections.Generic;
-using System.Drawing;
 
 namespace FakeCSFD.DAL.Model
 {
@@ -14,7 +14,7 @@ namespace FakeCSFD.DAL.Model
 
         public Genre Genre { get; set; }
 
-        public Image TitlePhoto { get; set; }
+        public MagickImage TitlePhoto { get; set; }
 
         public string CountryOfOrigin { get; set; }
 

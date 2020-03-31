@@ -1,8 +1,6 @@
 ﻿using FakeCSFD.DAL.Enums;
-using System;
+using ImageMagick;
 using System.Collections.Generic;
-using System.Drawing;
-using System.Text;
 
 namespace FakeCSFD.DAL.Model.Base
 {
@@ -16,7 +14,7 @@ namespace FakeCSFD.DAL.Model.Base
 
         public int Age { get; set; }
 
-        public Image Photo { get; set; }
+        public MagickImage Photo { get; set; }
 
         public ICollection<Movie> Movies { get; set; }
     }
